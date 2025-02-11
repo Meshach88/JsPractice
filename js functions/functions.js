@@ -3,7 +3,7 @@
 // 2. They are reusable.
 // 3. They are not executed until they are called.
 
-function weatherAdvisory (temperature) {
+function weatherAdvisory(temperature) {
     if (temperature >= 25) {
         console.log("It's hot! Stay hydrated.")
     } else if (temperature >= 15 && temperature <= 25) {
@@ -13,7 +13,7 @@ function weatherAdvisory (temperature) {
     } else {
         console.log("It's cold! Wear warm clothing");
     }
-} 
+}
 
 weatherAdvisory(28)
 weatherAdvisory(21)
