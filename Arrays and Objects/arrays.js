@@ -1,45 +1,40 @@
-// const numbers = new Array(10,20,30,40,50)
-// const sum = numbers.reduce((total,num)=>total + num,0)
+// Arrays are data structures used to hold more than one item.
+// 1. Creating an array
+// 2. Looking inside an array
+// 3. Array methods
 
-// console.log(numbers,sum)
+// Creating Arrays
+// 1. Using Array literals
+const names = ["John", "Jacob", "Sarah", "Bitrus", "Angelo"]
+console.log(names);
+// 2. Using the new Array()
+const car_brands = new Array("Toyota","Honda","Mercedes","BMW","Nissan")
+console.log(car_brands);
 
-// const alphabets = new Array(5)
-// console.log(alphabets)
+// Accessing/Modifying array items (looking inside arrays)
+// zero-based indexing
+console.log(names[2])
+console.log(car_brands[1])
 
-// console.log(alphabets.push('a','b','c','d','e'));
-// console.log(alphabets);
+names[3] = "Peter"
+console.log(names);
 
-// const deletedNum = numbers.splice(1,2,70,90)
-// console.log(deletedNum)
-// console.log(numbers)
+// Array Methods
+// push - to add an item to the end of an array. It returns the new length of the array
+names.push("Samuel","Ahania","Lizzy") 
+console.log(names);
 
-// console.log(numbers.slice(2,4))
+// pop - to remove the last item in an array. It returns the popped item.
+console.log(names.pop())
+console.log(names)
 
-// console.log([...numbers])
+// shift - to remove the first item in an array. It returns the removed item.
+names.shift()
+console.log(names)
 
+// unshift - to add an item to the beginning of the array. It returns the new length of the array
+names.unshift("Anthony")
+console.log(names);
 
-// REST operator
-// function sum (...numbers) {
-//     return numbers.reduce((total,num)=>total+num,0)
-// }
-
-// console.log(sum(1,2,3,4))
-
-// const [first, second, ...rest] = [1,2,3,4,5,6,7]
-
-// console.log(first);
-// console.log(second);
-// console.log(rest);
-
-// const {name, gender, ...details} = {name:'John', gender:'Male', age:24, salary:25000}
-
-// console.log(name)
-// console.log(gender)
-// console.log(details)
-
-const employee = JSON.stringify({name:'John', gender:'Male', age:24, salary:25000})
-console.log(employee);
-
-const parsedEmployee = JSON.parse(employee)
-console.log(parsedEmployee);
+// Assignment - Make a comparison between the 4 methods - push, pop, shift and unshift
 
