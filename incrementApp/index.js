@@ -1,7 +1,6 @@
 let countEl = document.getElementById("count-el")
 let saveEl = document.getElementById("save-el")
 let count = 0 
-let savedCounts = [];
 
 
 function increment(){
@@ -16,9 +15,19 @@ function save(){
     count = 0
 }
 
-function clear() {
-    saveEl.textContent = 0
+function clearEntries() {
+    console.log('Clear entries button clicked')
+    saveEl.textContent = 'Previous Entries: '
+    countEl.textContent = 0
+    count = 0
 }
+
+function undoEntry() {
+    saveEl.textContent = saveEl.textContent.slice(0,-4)
+}
+
+// let button = document.getElementById('clear-btn')
+// button.addEventListener('click', clearEntries)
 
 
 console.log(countEl)
