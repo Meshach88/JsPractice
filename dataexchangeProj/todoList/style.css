@@ -1,0 +1,49 @@
+body {
+      font-family: sans-serif;
+      background: #f5f7fa;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+    input, select, button {
+      padding: 10px;
+      margin: 5px 0;
+      font-size: 16px;
+      width: 100%;
+    }
+    .category-section {
+      margin-top: 20px;
+    }
+    .category-title {
+      font-weight: bold;
+      margin: 10px 0 5px;
+      background: #d0e7ff;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 15px;
+    }
+    li {
+      padding: 8px;
+      background: #eef;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .delete-btn {
+      background: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
